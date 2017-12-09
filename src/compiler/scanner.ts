@@ -876,7 +876,7 @@ namespace ts {
                         result += text.substring(start, pos);
                     }
                     else {
-                        error(Diagnostics.Numeric_separators_are_not_allowed_here, pos, 1);
+                        error(Diagnostics.Multiple_consecutive_numeric_separators_are_not_permitted, pos, 1);
                     }
                     pos++;
                     start = pos;
